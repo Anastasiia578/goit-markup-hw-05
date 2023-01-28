@@ -90,16 +90,18 @@ p {
     color: var(--hover-focus-color);
 }
 .menu {
-    position: relative;
+    
     padding: 24px 0px ;
     display:block;
     margin-left: 40px;
 }
-.menu-port::after {
+.current{
+    position: relative;
+}
+.current::after {
     position: absolute;
     content: "";
-    display: inline-block;
-    width: 66px;
+    width:100%;
     top: 48px;
     border-radius: 2px;
     height: 4px;
@@ -107,23 +109,9 @@ p {
 	left: 0;
     right: 0;
 }
-.menu-port:hover:after {
+.current:hover:after {
     background-color: var(--hover-focus-color);
-    border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.menu-stud::after{
-position: absolute;
-content: '';
-width: 48px;
-height: 4px;
-left: 0px;
-top: 48px;
-margin-top: 24px;
-}
-.menu-stud:hover::after{
-background: #4D5AE5;
-border-radius: 2px;
 }
 .header-nav
 {   font-style: normal;
