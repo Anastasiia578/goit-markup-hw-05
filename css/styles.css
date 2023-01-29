@@ -516,6 +516,7 @@ p {
 }
 
 .modal-close {
+    cursor: pointer;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -524,13 +525,9 @@ p {
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    background-color: rgba(231, 233, 252, 1);
-}
-.icon-clos{
-stroke-width: 0;
-stroke: currentColor;
-fill: currentColor;
+    color: rgba(231, 233, 252, 1);
 }
 .modal-close:is(:hover:focus){
-    background-color: var(--hover-focus-color);
+    color: var(--btn-active-colore);
+    border-color:var(--btn-active-colore)
 }
